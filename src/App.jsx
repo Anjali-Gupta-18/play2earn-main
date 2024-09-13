@@ -19,6 +19,7 @@ import Wordify from "./components/Wordify/Wordify";
 import FollowTask from "./components/FollowTask/FollowTask";
 import AudioTranscription from "./components/Audios/AudioTranscription";
 import { AuthProvider } from "./components/globalStateForAuth";
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
 
 const App = () => {
   return (

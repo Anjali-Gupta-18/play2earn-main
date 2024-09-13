@@ -27,7 +27,8 @@
     "serverless-offline": "^13.7.0",
     "serverless-plugin-include-dependencies": "^6.1.1",
     "serverless-prune-plugin": "^2.0.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "winston": "^3.14.2"
   },
   "scripts": {
     "start": "node server.js",

@@ -8,6 +8,13 @@ const adminRoutes = require("./routes/adminRoutes");
 const userRoutes = require("./routes/userRoutes");
 const followTaskRouter = require("./routes/FollowTaskRouter");
 const bodyParser = require("body-parser");
+const dataRoutes = require('./routes/dataRoutes'); 
+const tasksCompletedRoutes = require('./routes/tasksCompletedRoutes');
+const totalRewardsRoutes = require('./routes/totalRewardsRoutes'); 
+const taskCompletedOverTimeRoutes = require('./routes/taskcompletedovertimeRoutes');
+const newregistrationRoutes = require('./routes/newregistrationRoutes');
+const topfivegameRoutes = require('./routes/topfivegameRoutes');
+
 
 dotenv.config();
 
@@ -23,6 +30,12 @@ server.use("/api/tasks", taskRoutes);
 server.use("/api/admin", adminRoutes);
 server.use("/api/users", userRoutes);
 server.use("/api/follow-task", followTaskRouter);
+server.use('/api', dataRoutes);
+server.use('/api', tasksCompletedRoutes); 
+server.use('/api', totalRewardsRoutes); 
+server.use('/api', taskCompletedOverTimeRoutes);
+server.use('/api', newregistrationRoutes);
+server.use('/api', topfivegameRoutes);
 
 // Connect to MongoDB
 mongoose
