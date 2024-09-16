@@ -49,7 +49,6 @@ router.get('/tasks-completed-overtime', async (req, res) => {
       }
     ]);
 
-    console.log('Result:', result);  // Log the result for debugging
     res.json(result);
   } catch (error) {
     console.error('Error fetching tasks completed over time:', error);
